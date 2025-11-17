@@ -1,0 +1,15 @@
+/* simple styling; adapt to your theme */
+.getquote { padding: 36px 18px; max-width: 900px; margin: 0 auto; background: linear-gradient(180deg,#fff,#f7fbff); border-radius: 12px; box-shadow: 0 10px 30px rgba(2,22,54,0.06); scroll-margin-top: 90px; }
+.quote-inner h3 { margin: 0 0 6px; color: #0f172a; }
+.quote-inner .muted { color: #64748b; margin-bottom: 10px; }
+.quote-form .row { display:flex; gap:10px; margin-bottom:10px; }
+.quote-form input[type="text"], .quote-form input[type="email"], .quote-form textarea { padding:10px; border-radius:8px; border:1px solid rgba(0,0,0,0.08); width:100%; }
+.quote-form textarea { min-height:90px; resize:vertical; }
+.file-label { display:inline-flex; align-items:center; gap:10px; padding:10px; border-radius:8px; border:1px dashed rgba(0,0,0,0.08); cursor:pointer; margin-bottom:10px; }
+.file-label input { display:none; }
+.progress { display:flex; align-items:center; gap:8px; margin:8px 0; }
+.progress .bar { height:8px; background:linear-gradient(90deg,#2ea0ff,#007bff); border-radius:6px; flex:1; }
+.form-actions { display:flex; gap:10px; justify-content:flex-end; margin-top:8px; }
+.btn { padding:10px 14px; border-radius:8px; font-weight:700; border:none; cursor:pointer; }
+.btn.primary { background: linear-gradient(180deg,#2ea0ff,#007bff); color:#fff; }
+.btn.ghost { background:#fff; border:1px solid rgba(0,0,0,0.06); color:#0f172a; }
