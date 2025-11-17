@@ -207,3 +207,79 @@
   background: #1e293b;
   backdrop-filter: blur(4px);
 }
+/* ==========================================
+   MOBILE RESPONSIVE ALIGNMENT (MAX 820PX)
+   ========================================== */
+@media (max-width: 820px) {
+
+  /* Navbar inner alignment */
+  .navbar__inner {
+    padding: 0 12px;
+  }
+
+  /* Center the brand on mobile */
+  .navbar__brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Push toggle to left cleanly */
+  .navbar__left {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Mobile nav menu spacing */
+  .navbar__nav {
+    padding-top: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Increase link size for mobile tapping */
+  .navbar__link {
+    font-size: 1.2rem;
+  }
+
+  /* Smooth slide-in */
+  .navbar__nav {
+    right: -100%;
+    transition: right 0.35s ease-in-out;
+  }
+
+  .navbar__nav.is-open {
+    right: 0;
+  }
+
+  /* Backdrop fixes */
+  .navbar__backdrop.is-visible {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+    z-index: 40;
+  }
+
+  /* Toggle hamburger alignment */
+  .navbar__toggle {
+    z-index: 100;
+    margin-right: 8px;
+  }
+
+  /* Animate hamburger icon into X */
+  .navbar__toggle[aria-expanded="true"] .navbar__hamburger {
+    background: transparent;
+  }
+  .navbar__toggle[aria-expanded="true"] .navbar__hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .navbar__toggle[aria-expanded="true"] .navbar__hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}

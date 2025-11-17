@@ -38,25 +38,30 @@ const services = [
 export default function Services() {
   return (
     <section className="services" id="services">
-      <h2 className="services__title">What We Do</h2>
-      <p className="services__subtitle">
-        From rapid prototyping to custom designs, we deliver professional 3D printing solutions tailored to your needs.
-      </p>
-      <div className="services__grid">
-        {services.map((srv, i) => (
-          <div className="service-card" key={i}>
-            <div className="service-card__icon">{srv.icon}</div>
-            <h3 className="service-card__title">{srv.title}</h3>
-            <p className="service-card__desc">{srv.desc}</p>
-            <ul className="service-card__badges">
-              {srv.badges.map((b, j) => (
-                <li key={j}>{b}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="services__container">
+        
+        <h2 className="services__title">What We Do</h2>
+        
+        <p className="services__subtitle">
+          From rapid prototyping to custom designs, we deliver professional 3D printing solutions tailored to your needs.
+        </p>
+
+        <div className="services__grid">
+          {services.map((srv, i) => (
+            <div className="service-card" key={i}>
+              <div className="service-card__icon">{srv.icon}</div>
+              <h3 className="service-card__title">{srv.title}</h3>
+              <p className="service-card__desc">{srv.desc}</p>
+              <ul className="service-card__badges">
+                {srv.badges.map((b, j) => (
+                  <li key={j}>{b}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
       </div>
-     
     </section>
   );
 }
