@@ -337,13 +337,13 @@ Trust Section
 
   .about__subtitle {
     font-size: 1rem;
-    padding: 0 12px;
+    padding: 0 11px;
   }
 
   /* Grid stacks vertically */
   .about__grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2.2rem;
   }
 
   /* Content spacing */
@@ -387,7 +387,7 @@ Trust Section
   }
 
   .about__image-container {
-    width: 100%;
+    width: 80%;
     height: 240px;     /* Smaller on mobile */
     border-radius: 16px;
   }
